@@ -1,0 +1,14 @@
+name: Enable GitHub Actions
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  enable-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable Actions
+        uses: actions/checkout@v2
+      - name: Enable Actions
+        run: echo "Enabled GitHub Actions"
